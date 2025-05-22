@@ -1,75 +1,91 @@
 # Gradle
-.gradle
-/build
-/out
-target/
 .gradle/
+build/
 !gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 # Java
 *.class
+*.log
 *.jar
 *.war
 *.ear
 *.zip
 *.tar.gz
-hs_err_pid*.log
-.classpath
-.project
-.settings/
-.idea/
-.vscode/
-*.iml
-*.iws
-*.ipr
-nbproject/
-.DS_Store
-Thumbs.db
+*.rar
+hs_err_pid*
 
-# Allure
-/allure-results
-/allure-report
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Test results
+test-output/
+target/
+allure-results/
+screenshots/
+*.png
+*.jpg
+*.jpeg
 
 # Logs
-*.log
 logs/
-target/surefire-reports/
-test-output/
+*.log
+*.gz
 
-# IDE specific files
-.idea
-.vscode
-*.iml
-*.ipr
-*.iws
-
-# Operating System Files
+# OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Maven (if you happen to have any residual maven files or if you switch later)
-/target/
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
 
-# Docker
-.dockerignore
-/build/docker
+# Package Files
+*.dmg
+*.iso
 
-# GitHub Actions (if you have local workflows you don't want to commit)
-.github/workflows/*.yml
+# Browser drivers (WebDriverManager handles these)
+drivers/
+**/drivers/
 
-# For any auto-generated page object files (if applicable, adjust path)
-# e.g., if you generate page objects from a tool that creates files in a specific directory
-# src/main/java/com/yourproject/pages/generated/
-# src/test/java/com/yourproject/pages/generated/
-# /generated-page-objects/
-
-# Local configuration files
-.env
-.env.*
-config/local.properties
-application-local.properties
-
-# Test specific ignored files
-# If you have specific test data or configurations that are local
-# src/test/resources/testdata/local_test_data.json
-# src/test/resources/config/local_test_config.properties
+# Reports
+reports/
+cucumber-reports/
+allure-report/
+test-results/
