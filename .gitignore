@@ -1,0 +1,75 @@
+# Gradle
+.gradle
+/build
+/out
+target/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+hs_err_pid*.log
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+nbproject/
+.DS_Store
+Thumbs.db
+
+# Allure
+/allure-results
+/allure-report
+
+# Logs
+*.log
+logs/
+target/surefire-reports/
+test-output/
+
+# IDE specific files
+.idea
+.vscode
+*.iml
+*.ipr
+*.iws
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Maven (if you happen to have any residual maven files or if you switch later)
+/target/
+
+# Docker
+.dockerignore
+/build/docker
+
+# GitHub Actions (if you have local workflows you don't want to commit)
+.github/workflows/*.yml
+
+# For any auto-generated page object files (if applicable, adjust path)
+# e.g., if you generate page objects from a tool that creates files in a specific directory
+# src/main/java/com/yourproject/pages/generated/
+# src/test/java/com/yourproject/pages/generated/
+# /generated-page-objects/
+
+# Local configuration files
+.env
+.env.*
+config/local.properties
+application-local.properties
+
+# Test specific ignored files
+# If you have specific test data or configurations that are local
+# src/test/resources/testdata/local_test_data.json
+# src/test/resources/config/local_test_config.properties
