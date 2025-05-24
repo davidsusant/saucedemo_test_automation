@@ -80,7 +80,7 @@ Thumbs.db
 *.dmg
 *.iso
 
-# Browser drivers (WebDriverManager handles these)
+# Browser drivers (driver.WebDriverManager handles these)
 drivers/
 **/drivers/
 
